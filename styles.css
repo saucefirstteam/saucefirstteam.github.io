@@ -1,5 +1,5 @@
 @font-face{font-family:"Mona Sans";src:url("assets/fonts/mona-sans.woff2?v=c8847174a74b389b8484715048111f028ae383e0bc702d0bcf6fbfffa23b742c") format("woff2");font-weight:200 900;font-stretch:75% 125%;font-style:normal;font-display:swap}
-@font-face{font-family:"UNIDOT Korean Sans";src:url("assets/fonts/unidot-korean-sans.woff2?v=62c454e8806e5ffd9798a2a21db90b43ff7898ea8e9ad79082d42121cd7e7528") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"UNIDOT Korean Sans";src:url("assets/fonts/unidot-korean-sans.woff2?v=4064fee5cad44c849b18a8d01b91f07890bbf2e03af6f6c9e404e9b1ad9c2345") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
 /* Official Figma Home V1 child contexts are the desktop source of truth.
    The matching BRIX Home V1 Webflow demo supplies responsive composition. */
 :root{--background:#010101;--accent:#1e6aff;--neutral:#bebebe;--border:#212121;--white:#fff;--container:1236px;--section-padding:120px;--radius:8px;color-scheme:dark}
@@ -102,3 +102,62 @@
 
 /* Home V1 slide sizes/gap are preserved; end padding lets edge slides reach center. */
 @media(min-width:992px){.operating-slides{padding-inline-start:max(0px,calc((100cqw - 586.5px)/2));padding-inline-end:max(0px,calc((100cqw - 608.75px)/2))}}
+
+/* Official interior refinement: no Home V1 layout selector or shared root token is changed. */
+.site-interior{--interior-h1:48px;--interior-h2:30px;--interior-h3:22px;--interior-body:18px;--interior-meta:14px;font-size:var(--interior-body);line-height:1.75}
+.site-interior h1{font-size:var(--interior-h1);line-height:1.3;font-weight:500}
+.site-interior h2{font-size:var(--interior-h2);line-height:1.3;font-weight:500}
+.site-interior h3{font-size:var(--interior-h3);line-height:1.3;font-weight:500}
+.site-interior p{font-size:var(--interior-body);line-height:1.75}
+.site-interior .interior-hero h1{font-size:var(--interior-h1);max-width:760px}
+.site-interior .interior-lead{font-size:var(--interior-body);line-height:1.75;max-width:760px}
+.site-interior .company-statement{font-size:var(--interior-h2);line-height:1.3;letter-spacing:0}
+.site-interior .eyebrow,.site-interior .interior-card-category,.site-interior .interior-card-date,.site-interior .article-date,.site-interior .company-fact dt,.site-interior .section-number,.site-interior .card-number,.site-interior .contents-number{font-size:var(--interior-meta);line-height:1.75}
+.site-interior .interior-card-category{color:var(--text-soft);margin:0}
+.site-interior .interior-card-date{color:var(--text-soft);display:block;margin-top:24px}
+.site-interior .interior-breadcrumbs{font-size:var(--interior-meta);margin-bottom:24px}
+.site-interior .interior-section-heading,.site-interior .company-information-content,.site-interior .editorial-page .interior-hero-copy{max-width:760px}
+.site-interior .company-facts-heading,.site-interior .company-tech-card h3,.site-interior .company-principle-title h3,.site-interior .section-item h3,.site-interior .related-card h3{font-size:var(--interior-h3)}
+.site-interior .company-fact dd,.site-interior .company-information p:last-child{font-size:var(--interior-body)}
+.site-interior .company-technology-grid{grid-template-columns:minmax(0,1fr);gap:24px}
+.site-interior .company-tech-card{padding:24px;align-items:stretch}
+.site-interior .company-tech-card>p{font-size:var(--interior-body);margin-top:16px}
+.site-interior .company-card-top{margin-bottom:16px}
+.site-interior .company-primary-link,.site-interior .company-subfeature-link{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;font-size:var(--interior-body);font-weight:500;color:#fff}
+.site-interior .company-primary-link{margin-top:24px}
+.site-interior .company-subfeatures{border-top:1px solid var(--border);margin-top:24px;padding-top:16px}
+.site-interior .company-subfeatures>p{font-size:var(--interior-meta);color:var(--text-soft);margin-bottom:8px}
+.site-interior .company-subfeature-link{padding-block:8px;font-size:var(--interior-meta)}
+.site-interior .security-summary{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:32px}
+.site-interior .security-summary-card{min-width:0;background:var(--surface-raised);border:1px solid var(--border);border-radius:8px;padding:24px}
+.site-interior .security-summary-card dt{font-size:var(--interior-meta);color:var(--text-soft);line-height:1.75;margin-bottom:12px}
+.site-interior .security-summary-card dd{font-size:var(--interior-body);line-height:1.75;word-break:keep-all;overflow-wrap:anywhere}
+.site-interior .interior-body-layout{max-width:1080px;grid-template-columns:minmax(0,1fr);gap:40px}
+.site-interior .interior-sections{max-width:760px;width:100%}
+.site-interior .interior-content-title h2{font-size:var(--interior-h2);line-height:1.3}
+.site-interior .interior-content-section>p{font-size:var(--interior-body);line-height:1.75;max-width:760px}
+.site-interior .interior-content-section{scroll-margin-top:32px}
+.site-interior .section-item-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+.site-interior .section-item p{font-size:var(--interior-body);line-height:1.75}
+.site-interior .page-contents{position:static;padding:16px 24px;align-self:start}
+.site-interior .page-contents-desktop{display:none}
+.site-interior .page-contents-mobile{display:block}
+.site-interior .page-contents-mobile summary{display:list-item;cursor:pointer;min-height:44px;align-content:center;font-size:var(--interior-body);font-weight:500;color:#fff}
+.site-interior .page-contents-mobile nav{padding-top:16px}
+.site-interior .contents-label{font-size:var(--interior-meta);color:#fff;font-weight:500;margin-bottom:16px}
+.site-interior .page-contents a{font-size:var(--interior-meta);line-height:1.75;min-height:44px}
+.site-interior .interior-directory-card,.site-interior .related-card{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:24px;height:auto;min-height:0}
+.site-interior .interior-directory-card h2,.site-interior .related-card h3{font-size:var(--interior-h3);line-height:1.3;margin-top:12px}
+.site-interior .interior-directory-card>.interior-card-description,.site-interior .related-card>.interior-card-description{font-size:var(--interior-body);line-height:1.75;margin-top:16px}
+.site-interior .directory-card-bottom{min-height:44px;gap:16px;padding-top:24px;margin-top:auto}
+.site-interior .card-link-label{font-size:var(--interior-body);line-height:1.3}
+.site-interior .insight-card-image{width:100%;height:auto;border-radius:8px;margin-bottom:24px}
+.site-interior .interior-parent-link .text-link,.site-interior .interior-detail-back .text-link,.site-interior .button-secondary,.site-interior .industry-link,.site-interior .axis-summary-links a,.site-interior .footer-links a,.site-interior .desktop-nav a,.site-interior .mobile-menu summary,.site-interior .mobile-menu nav a{min-height:44px}
+.site-interior .desktop-nav a{display:inline-flex;align-items:center}
+.site-interior .site-header [aria-current]{color:#fff;text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--accent)}
+.site-interior a:focus-visible,.site-interior summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.site-interior .flow-figure figcaption{font-size:var(--interior-meta);line-height:1.75}
+.site-interior .attribution,.site-interior .footer-label{font-size:var(--interior-meta)}
+@media(min-width:720px){.site-interior .section-item-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.site-interior .company-technology-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:992px){.site-interior .company-technology-grid,.site-interior .security-summary{grid-template-columns:repeat(3,minmax(0,1fr))}.site-interior .interior-body-layout{grid-template-columns:224px minmax(0,1fr);gap:48px}.site-interior .page-contents{position:sticky;top:32px;padding:24px}.site-interior .page-contents-desktop{display:block}.site-interior .page-contents-mobile{display:none}.site-interior .company-tech-card,.site-interior .related-card,.site-interior .interior-directory-card{padding:32px}}
+@media(max-width:767px){.site-interior{--interior-h1:32px;--interior-h2:26px;--interior-h3:20px;--interior-body:16px}.site-interior .interior-content-title{gap:12px}.site-interior .security-summary-card{padding:20px}.site-interior .interior-breadcrumbs{gap:6px}.site-interior .editorial-page .interior-breadcrumbs{max-width:760px}}
