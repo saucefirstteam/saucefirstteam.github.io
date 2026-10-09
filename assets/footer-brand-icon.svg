@@ -1,7 +1,7 @@
 <svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="27.074" height="28.2049" viewBox="0 0 27.074 28.2049" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Mask group">
 <mask id="mask0_0_188" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="1" width="28" height="28">
-<path id="Rectangle 7125" d="M0 1.31651L-nan -nanC-nan -nan 18.1347 -0.438837 27.074 1.31651L-nan -nanL27.074 1.31651V8.16124C27.074 14.7657 23.8571 20.9563 18.4526 24.7523L13.537 28.2049L8.62146 24.7523C3.21689 20.9563 0 14.7657 0 8.16124V1.31651Z" fill="#D9D9D9"/>
+<path id="Rectangle 7125" d="M0 1.31651C8.9393 -0.438837 18.1347 -0.438837 27.074 1.31651V8.16124C27.074 14.7657 23.8571 20.9563 18.4526 24.7523L13.537 28.2049L8.62146 24.7523C3.21689 20.9563 0 14.7657 0 8.16124V1.31651Z" fill="#D9D9D9"/>
 </mask>
 <g mask="url(#mask0_0_188)">
 <g id="Group 1000005855">
