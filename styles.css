@@ -1,5 +1,5 @@
 @font-face{font-family:"Mona Sans";src:url("assets/fonts/mona-sans.woff2?v=c8847174a74b389b8484715048111f028ae383e0bc702d0bcf6fbfffa23b742c") format("woff2");font-weight:200 900;font-stretch:75% 125%;font-style:normal;font-display:swap}
-@font-face{font-family:"UNIDOT Korean Sans";src:url("assets/fonts/unidot-korean-sans.woff2?v=3d9c4d8d17ed1cbf4906a2eb1734ef96a1a32d85aa4fa34646aaf3d71d20428c") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"UNIDOT Korean Sans";src:url("assets/fonts/unidot-korean-sans.woff2?v=bad0d09f3de8863cf83da8388c5b941aad1b1252874a007982773a2c5afc512a") format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
 /* Official Figma Home V1 child contexts are the desktop source of truth.
    The matching BRIX Home V1 Webflow demo supplies responsive composition. */
 :root{--background:#010101;--accent:#1e6aff;--neutral:#bebebe;--border:#212121;--white:#fff;--container:1236px;--section-padding:120px;--radius:8px;color-scheme:dark}
@@ -102,4 +102,3 @@
 
 /* Home V1 slide sizes/gap are preserved; end padding lets edge slides reach center. */
 @media(min-width:992px){.operating-slides{padding-inline-start:max(0px,calc((100cqw - 586.5px)/2));padding-inline-end:max(0px,calc((100cqw - 608.75px)/2))}}
-
