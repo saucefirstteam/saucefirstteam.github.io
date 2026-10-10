@@ -164,4 +164,8 @@
 .button,.text-link,.desktop-nav a,.mobile-menu nav a,.footer-links a,.attribution a,.axis-summary-links a,.interior-breadcrumbs a,.page-contents a,.company-primary-link,.company-subfeature-link,.industry-link,.carousel-controls button,.company-tech-card,.related-card,.interior-directory-card,.process-step summary{transition-property:color,background-color,border-color;transition-duration:var(--motion-fast);transition-timing-function:var(--motion-ease)}
 .company-tech-card,.related-card,.interior-directory-card,.process-step summary{transition-duration:var(--motion-state)}
 .carousel-controls button{transition-property:color,background-color,border-color,opacity}
+/* Decorative hero artwork must not cover the CTA pointer targets. */
+.hero-image-wrapper{pointer-events:none}
+/* Home V1 uses the original 54px mobile article spacing. */
+@media(max-width:767px){.home-page .article-grid{row-gap:54px}}
 @media(prefers-reduced-motion:reduce){html,.operating-carousel{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
